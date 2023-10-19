@@ -2,6 +2,7 @@ import {Link, NavLink} from 'react-router-dom'
 
 import './navbar.css'
 import Logo from '../images/logo.png'
+import {links} from '../data'
 
 
 const Navbar = () => {
@@ -11,8 +12,20 @@ const Navbar = () => {
             <Link to={"/"} className='logo'>
                 <img src={Logo} alt="Nav Logo"/>
             </Link>
-            nav links
-            nav buttons
+            <ul className='nav_links'>
+              {
+                  links.map(({name, path}, index) => {
+                      return(
+                        <li>
+                            <NavLink to={path}>{name}</NavLink>
+                        </li>
+                      )
+                  })
+              }
+            </ul>
+            <button className="nav_toggle-btn">
+              
+            </button>
         </div>
     </nav>
   )
