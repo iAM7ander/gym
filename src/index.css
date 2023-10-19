@@ -30,4 +30,5 @@
 /* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
+    color: var(--color-gray-200);
 }
