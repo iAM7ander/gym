@@ -3,6 +3,7 @@ import {Link, NavLink} from 'react-router-dom'
 import './navbar.css'
 import Logo from '../images/logo.png'
 import {links} from '../data'
+import {FaBars} from 'react-icons/fa6'
 
 
 const Navbar = () => {
@@ -24,7 +25,7 @@ const Navbar = () => {
               }
             </ul>
             <button className="nav_toggle-btn">
-              
+              <FaBars/>
             </button>
         </div>
     </nav>
