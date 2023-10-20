@@ -22,7 +22,7 @@ const Navbar = () => {
               {
                   links.map(({name, path}, index) => {
                       return(
-                        <li>
+                        <li key={index}>
                             <NavLink to={path} className={({isActive}) => isActive ? 'active-nav' : ''}>{name}</NavLink>
                         </li>
                       )
