@@ -8,7 +8,7 @@ import {links} from '../data'
 import {FaBars} from 'react-icons/fa6'
 
 const Navbar = () => {
-    const [isNavShowing, setIsnavShowing] = useState(false);
+    const [isNavShowing, setIsNavShowing] = useState(false);
 
 
 
@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link to={"/"} className='logo'>
                 <img src={Logo} alt="Nav Logo"/>
             </Link>
-            <ul className='nav_links'>
+            <ul className={'nav_links'}>
               {
                   links.map(({name, path}, index) => {
                       return(

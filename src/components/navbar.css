@@ -97,4 +97,8 @@ nav {
         align-items: center;
         padding: 1rem 5rem 1rem 3rem;
     }
+
+    .show_nav {
+        display: flex;
+    }
 }
