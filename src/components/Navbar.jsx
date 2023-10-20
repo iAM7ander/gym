@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import {Link, NavLink} from 'react-router-dom'
 
 import './navbar.css'
@@ -5,8 +7,11 @@ import Logo from '../images/logo.png'
 import {links} from '../data'
 import {FaBars} from 'react-icons/fa6'
 
-
 const Navbar = () => {
+    const [isNavShowing, setIsnavShowing] = useState(false);
+
+
+
   return (
     <nav>
         <div className="container nav_container">
