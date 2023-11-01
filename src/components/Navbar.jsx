@@ -29,7 +29,7 @@ const Navbar = () => {
                   })
               }
             </ul>
-            <button className="nav_toggle-btn">
+            <button className="nav_toggle-btn" onClick={() => setIsNavShowing (!isNavShowing)}>
               <FaBars/>
             </button>
         </div>
