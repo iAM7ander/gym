@@ -101,4 +101,8 @@ nav {
     .show_nav {
         display: flex;
     }
+
+    .hide_nav {
+        display: none;
+    }
 }

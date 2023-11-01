@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link to={"/"} className='logo'>
                 <img src={Logo} alt="Nav Logo"/>
             </Link>
-            <ul className={'nav_links'}>
+            <ul className={`nav_links ${isNavShowing ? 'show_nav' : 'hide_Nav'}`}>
               {
                   links.map(({name, path}, index) => {
                       return(
