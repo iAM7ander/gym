@@ -6,6 +6,7 @@ import './navbar.css'
 import Logo from '../images/logo.png'
 import {links} from '../data'
 import {FaBars} from 'react-icons/fa6'
+import {MdOutlineClose} from 'react-icons/md'
 
 const Navbar = () => {
     const [isNavShowing, setIsNavShowing] = useState(false);
@@ -30,7 +31,9 @@ const Navbar = () => {
               }
             </ul>
             <button className="nav_toggle-btn" onClick={() => setIsNavShowing (!isNavShowing)}>
-              <FaBars/>
+              {
+                  isNavShowing ? <MdOutlineClose/> : <FaBars/>
+              }
             </button>
         </div>
     </nav>
