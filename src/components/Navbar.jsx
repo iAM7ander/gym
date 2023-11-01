@@ -30,7 +30,7 @@ const Navbar = () => {
                   })
               }
             </ul>
-            <button className="nav_toggle-btn" onClick={() => setIsNavShowing (!isNavShowing)}>
+            <button className="nav_toggle-btn" onClick={() => setIsNavShowing (prev => !prev)}>
               {
                   isNavShowing ? <MdOutlineClose/> : <FaBars/>
               }
